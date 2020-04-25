@@ -10,11 +10,13 @@
   "author": "Samuele Maurizi (samuelemaurizi.net)",
   "license": "MIT",
   "dependencies": {
+    "config": "^3.3.1",
     "express": "^4.17.1",
     "express-validator": "^6.4.0",
     "mongoose": "^5.9.10"
   },
   "devDependencies": {
+    "chalk": "^4.0.0",
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.3"
   }

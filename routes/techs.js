@@ -1,5 +1,8 @@
 const express = require('express');
+const { check, validationResult } = require('express-validator');
 const router = express.Router();
+
+const Tech = require('../models/Tech');
 
 // @route     GET api/techs
 // @desc      Get all techs
@@ -8,10 +11,22 @@ router.get('/', (req, res) => {
 });
 
 // @route     POST api/techs
-// @desc      Add new log
-router.post('/', (req, res) => {
-  res.send('Add new tech');
-});
+// @desc      Add new tech
+router.post(
+  '/',
+  [
+    check('firstName', 'Name is required').not().isEmpty(),
+    check('lastName', 'Last name is required').not().isEmpty(),
+  ],
+  (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    res.send('passed');
+  }
+);
 
 // @route     PUT api/techs/:id
 // @desc      Update tech
