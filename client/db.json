@@ -1,0 +1,82 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Today Test #1 db.json is now populated",
+      "attention": false,
+      "tech": "Tony Gun",
+      "date": "2020-04-18T12:56:33.941Z"
+    },
+    {
+      "id": 2,
+      "message": "Another Test of the Day",
+      "attention": true,
+      "tech": "Charlotte Jacoby",
+      "date": "2020-04-18T14:49:28.024Z"
+    },
+    {
+      "message": "Testing Add Log #3 - must refresh the page in order to view the log",
+      "attention": true,
+      "tech": "Charlotte Jacoby",
+      "date": "2020-04-16T15:57:16.207Z",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "message": "Test #2 Add log",
+      "attention": false,
+      "tech": "Marcel Duchamp",
+      "date": "2020-04-18T14:43:39.410Z"
+    },
+    {
+      "id": 5,
+      "message": "Testing on Saturday",
+      "attention": true,
+      "tech": "Tony Gun",
+      "date": "2020-04-18T13:05:33.402Z"
+    },
+    {
+      "message": "Test #3 - Saturday",
+      "attention": true,
+      "tech": "Marcel Duchamp",
+      "date": "2020-04-18T13:39:37.167Z",
+      "id": 6
+    },
+    {
+      "message": "Test #4 - Saturday",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-04-18T14:09:12.647Z",
+      "id": 7
+    },
+    {
+      "message": "Some more",
+      "attention": false,
+      "tech": "Sam Corby",
+      "date": "2020-04-18T14:19:01.763Z",
+      "id": 8
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": 2,
+      "firstName": "Sam",
+      "lastName": "Corby"
+    },
+    {
+      "id": 3,
+      "firstName": "Charlotte",
+      "lastName": "Jacoby"
+    },
+    {
+      "firstName": "Marcel",
+      "lastName": "Duchamp",
+      "id": 4
+    }
+  ]
+}
