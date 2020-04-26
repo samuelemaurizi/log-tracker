@@ -6,8 +6,14 @@ const Tech = require('../models/Tech');
 
 // @route     GET api/techs
 // @desc      Get all techs
-router.get('/', (req, res) => {
-  res.send('Get all techs');
+router.get('/', async (req, res) => {
+  try {
+    const techs = await Tech.find();
+    res.json(techs);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
 });
 
 // @route     POST api/techs

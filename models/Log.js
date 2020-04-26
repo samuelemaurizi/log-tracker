@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 
 const LogSchema = mongoose.Schema({
+  // tech: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: 'teches',
+  // },
   tech: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'teches',
+    type: String,
+    required: true,
   },
   message: {
     type: String,
